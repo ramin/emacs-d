@@ -56,6 +56,7 @@
 (setq linum-format "%d ")
 
 ;; file extentions -> mode
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 (add-to-list 'auto-mode-alist '("\\.html.erb$" . rhtml-mode))
 (add-to-list 'auto-mode-alist '("\\.scss$" . css-mode))
 
