@@ -20,7 +20,7 @@
 ;;
 ;; (require 'yaml-mode)
 ;; (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
-;; 
+;;
 ;; Adding this code will make Emacs enter yaml mode whenever you open
 ;; a .yml file
 (add-to-list 'load-path "~/.emacs.d/vendor")
@@ -61,7 +61,7 @@
 
 ;; custom colors
 (set-face-background 'show-paren-match-face "#593A58")
-(set-face-background 'region "#424951") ; Set region background color 
+(set-face-background 'region "#424951") ; Set region background color
 
 ;; recent mode
 (require 'recentf)
@@ -82,3 +82,6 @@
 
 ;; clean up!
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
+
+(require 'yasnippet)
+    (yas-global-mode 1)
