@@ -86,3 +86,10 @@
 
 (require 'yasnippet)
     (yas-global-mode 1)
+
+(setq-default truncate-lines t)
+(delete-selection-mode 1) ;; :-(
+
+;; insanity wolf
+(require 'no-easy-keys)
+(no-easy-keys 1)
