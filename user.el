@@ -93,3 +93,14 @@
 ;; insanity wolf
 (require 'no-easy-keys)
 (no-easy-keys 1)
+
+;; go-mode tab display
+(add-hook 'go-mode-hook
+          (lambda ()
+            (setq-default)
+            (setq tab-width 4)
+            (setq standard-indent 4)
+            ))
+
+;; go-mode paredit
+(add-hook 'go-mode-hook 'esk-paredit-nonlisp)
