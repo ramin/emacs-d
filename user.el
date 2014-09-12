@@ -102,5 +102,11 @@
             (setq standard-indent 4)
             ))
 
+;; css indent
+(setq css-indent-offset 2)
+
 ;; go-mode paredit
 (add-hook 'go-mode-hook 'esk-paredit-nonlisp)
+
+;; ruby not funky indenting
+(setq ruby-deep-indent-paren nil)
