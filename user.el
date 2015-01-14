@@ -110,3 +110,9 @@
 
 ;; ruby not funky indenting
 (setq ruby-deep-indent-paren nil)
+
+;; js2-mode && javascript mode indents
+(setq-default js2-basic-offset 2)
+(setq js2-deep-indent-paren nil)
+(setq-default javascript-basic-offset 2)
+(setq javascript-deep-indent-paren nil)
