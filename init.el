@@ -9,3 +9,4 @@
   (package-refresh-contents))
 
 (load "~/.emacs.d/user.el")
+(put 'ido-exit-minibuffer 'disabled nil)
