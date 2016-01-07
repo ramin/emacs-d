@@ -107,6 +107,7 @@
 
 ;; go-mode paredit
 (add-hook 'go-mode-hook 'esk-paredit-nonlisp)
+(add-hook 'before-save-hook 'gofmt-before-save)
 
 ;; ruby not funky indenting
 (setq ruby-deep-indent-paren nil)
