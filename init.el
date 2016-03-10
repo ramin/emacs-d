@@ -10,3 +10,4 @@
 
 (load "~/.emacs.d/user.el")
 (put 'ido-exit-minibuffer 'disabled nil)
+(put 'downcase-region 'disabled nil)
