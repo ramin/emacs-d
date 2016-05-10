@@ -118,6 +118,17 @@
 (setq-default javascript-basic-offset 2)
 (setq javascript-deep-indent-paren nil)
 
+;; php-mode booo
+(require 'php-mode)
+(add-to-list 'auto-mode-alist '("\\.php$" . php-mode))
+(add-to-list 'auto-mode-alist '("\\.phtml$" . php-mode))
+(add-hook 'php-mode-hook
+          (lambda ()
+            (setq-default)
+            (setq c-basic-offset 4)
+            (setq tab-width 2)
+            ))
+
 ;;
 (defun copy-from-osx ()
   (shell-command-to-string "pbpaste"))
