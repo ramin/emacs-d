@@ -56,6 +56,8 @@
 (setq linum-format "%d ")
 
 ;; file extentions -> mode
+(add-to-list 'auto-mode-alist '("\\.cft$" . json-mode))
+(add-to-list 'auto-mode-alist '("\\.template$" . json-mode))
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 (add-to-list 'auto-mode-alist '("\\.html.erb$" . rhtml-mode))
 (add-to-list 'auto-mode-alist '("\\.scss$" . css-mode))
@@ -113,21 +115,11 @@
 (setq ruby-deep-indent-paren nil)
 
 ;; js2-mode && javascript mode indents
-(setq-default js2-basic-offset 4)
+(setq-default js2-basic-offset 2)
 (setq js2-deep-indent-paren nil)
-(setq-default javascript-basic-offset 4)
+(setq-default js-indent-level 2)
+(setq-default javascript-basic-offset 2)
 (setq javascript-deep-indent-paren nil)
-
-;; php-mode booo
-(require 'php-mode)
-(add-to-list 'auto-mode-alist '("\\.php$" . php-mode))
-(add-to-list 'auto-mode-alist '("\\.phtml$" . php-mode))
-(add-hook 'php-mode-hook
-          (lambda ()
-            (setq-default)
-            (setq c-basic-offset 4)
-            (setq tab-width 2)
-            ))
 
 ;;
 (defun copy-from-osx ()
